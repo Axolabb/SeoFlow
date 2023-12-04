@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
+  }
+body {
+    font-family: 'Nunito', sans-serif;
+}
+  

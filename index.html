@@ -4,17 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.scss">
     <title>Document</title>
 </head>
 <body>
     <div class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__about">
-                    <div class="about__number-block">
-                        <img src="img/svg/" alt="">
-                        
+                <div class="header-about">
+                    <div class="about__left-container">
+                        <div class="about__number-block">
+                            <div style="background: #F4AB00; padding: 8px 8px; max-width: 30px;" >
+                                <img src="img/svg/phone.svg">
+                            </div>
+                            <span class="about__text">+1800-123-4567</span>
+                        </div>
+                        <div class="about__e-mail-block">
+                            <div style="background: #F4AB00; padding: 8px 8px; max-width: 30px;">
+                                <img src="img/svg/tg.svg">
+                            </div>
+                            <span class="about__text">info@brandexponents.com</span>
+                        </div>
                     </div>
+                    <ul class="about__right-block">
+                        <li class="about__right-item"><img src="img/svg/facebook.svg"></li>
+                        <li class="about__right-item"><img src="img/svg/twitter.svg"></li>
+                        <li class="about__right-item"><img src="img/svg/in.svg"></li>
+                        <li class="about__right-item"><img src="img/svg/p.svg"></li>
+                    </ul>
+                </div>
+                <nav class="header-nav">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="94" height="17" viewBox="0 0 94 17" fill="none"><path d="M89.674 3.16949L91.5491 1.21048L93.4239 3.16949L94 2.56639L91.5491 0L89.0982 2.56639L89.674 3.16949Z" fill="black"/><path d="M6.38485 15.1732C9.3917 15.1732 11.3899 13.3286 11.3899 10.9705C11.3899 8.25105 9.73425 7.33823 6.5371 6.90084C4.17729 6.55854 3.72056 6.00705 3.72056 4.90406C3.72056 3.85813 4.51984 3.11647 6.06133 3.11647C7.62185 3.11647 8.44016 3.72501 8.68756 5.15128H11.0093C10.7429 2.54596 8.99205 1.21478 6.06133 1.21478C3.22576 1.21478 1.32269 2.88827 1.32269 5.11325C1.32269 7.66152 2.86418 8.6504 6.11842 9.08779C8.32598 9.44912 8.95399 9.92454 8.95399 11.1797C8.95399 12.4348 7.88827 13.2715 6.38485 13.2715C4.08214 13.2715 3.53025 12.1305 3.35897 10.7613H0.92305C1.11336 13.3286 2.67387 15.1732 6.38485 15.1732ZM14.6016 14.983H23.4319V12.9863H17.1327V9.01173H21.9284V7.11003H17.1327V3.38271H23.1083V1.38593H14.6016V14.983ZM32.5327 13.1384C30.0587 13.1384 28.2508 11.2177 28.2508 8.25105V8.09891C28.2508 5.1703 29.8303 3.21156 32.4946 3.21156C35.1589 3.21156 36.7194 5.2844 36.7194 8.0799V8.23203C36.7194 11.1797 35.1018 13.1384 32.5327 13.1384ZM32.4946 15.1732C36.6242 15.1732 39.3456 12.1876 39.3456 8.21301V8.06088C39.3456 4.06732 36.5481 1.19576 32.4946 1.19576C28.4601 1.19576 25.6055 4.14339 25.6055 8.11793V8.27006C25.6055 12.1876 28.3269 15.1732 32.4946 15.1732ZM42.5514 14.983H45.0825V9.41108H49.726V7.45234H45.0825V3.40173H50.982V1.38593H42.5514V14.983ZM53.8098 14.983H56.1125V0.435081H53.8098V14.983ZM64.1337 13.3856C62.3828 13.3856 61.3742 12.1115 61.3742 10.0767V9.92454C61.3742 7.87071 62.4209 6.63461 64.1337 6.63461C65.8464 6.63461 66.8741 7.88973 66.8741 9.94356V10.0767C66.8741 12.1115 65.8464 13.3856 64.1337 13.3856ZM64.1146 15.1732C67.0454 15.1732 69.2339 13.1574 69.2339 10.0577V9.90552C69.2339 6.86281 67.0454 4.828 64.1337 4.828C61.2029 4.828 59.0144 6.88183 59.0144 9.96257V10.1147C59.0144 13.1384 61.1839 15.1732 64.1146 15.1732ZM73.8523 14.983H76.2121L78.2293 8.28908L80.0753 14.983H82.4161L85.5371 5.03718H83.2915L81.2172 12.2256L79.276 5.03718H77.3539L75.2415 12.2256L73.2623 5.03718H70.8074L73.8523 14.983Z" fill="black"/></svg></span>
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">Дом</li>
+                        <li class="header-nav__item">Почему SEO?</li>
+                        <li class="header-nav__item">Сервисы</li>
+                        <li class="header-nav__item">Команда</li>
+                        <li class="header-nav__item">Цены</li>
+                        <li class="header-nav__item">Блог</li>
+                        <li class="header-nav__item">Контакты</li>
+                    </ul>
+                    <a class="button">Запрос</a>
+                </nav>
+                <div class="header__text-container">
+                    <p class="header__text">Мы - стратегическое</p>
+                    <p class="header__text header__text-orange">SEO маркетинг</p>
+                    <p class="header__text">агенство.</p>
+                </div>
+                <div class="header__img-block">
+                    <img src="img/png/image.png" style="width: 100%;">
                 </div>
             </div>
         </div>

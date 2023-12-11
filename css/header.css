@@ -8,6 +8,30 @@ body {
 }
 .burger {
   display: none;
+  position: relative;
+}
+.burger span,
+.burger span::before,
+.burger span::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    border-radius: 100px;
+    background: black;
+}
+.burger span {
+    position: relative;
+}
+.burger span::before,
+.burger span::after {
+    content: '';
+    position: absolute;
+}
+.burger span::before {
+    top: -10px;
+}
+.burger span::after {
+    bottom: -10px;
 }
 .header {
   background: url('../img/bg/bg-fiol.jpg') 50% 0 / cover no-repeat;
@@ -57,16 +81,29 @@ body {
   display: flex;
   gap: 30px;
 }
+.header-nav__item {
+    transition: var(--tr);
+}
+.header-nav__item:hover {
+    text-shadow: 1px 1px 8px #afafaf;
+    transform: scale(1.1);
+    transition: var(--tr);
+}
 .button {
   border-radius: 32px;
   background: var(--orange);
   padding: 11px 40px;
   color: #FFF;
   line-height: 19px;
+  transition: var(--tr);
+  max-width: 230px;
 }
+
 .header__text-container {
   width: 600px;
   color: #FFF;
+  display: flex;
+  flex-direction: column;
 }
 .header__text, .header__text-orange {
   font-size: 60px;
@@ -109,9 +146,9 @@ body {
   padding: 100px 80px;
   border-radius: 10px;
   box-shadow: 9px 9px 35px 0px rgba(56, 11, 113, 0.10);
-  position: absolute;
-  top: 85%;
+  z-index: 10;
   gap: 60px 90px;
+  margin-bottom: 150px;
 }
 .about__text-container {
   min-width: 100px;
@@ -120,7 +157,12 @@ body {
 }
 .h2-text {
   font-size: 42px;
-  color: var(--viol1)
+  color: var(--viol1);
+  line-height: 56px;
+}
+.h3-text {
+  font-size: 28px;
+  color: var(--viol1);
 }
 .h4-text {
   font-size: 18px;
@@ -129,7 +171,8 @@ body {
 }
 .small-text {
   line-height: 34px;
-  color: var(--viol2)
+  color: var(--viol2);
+  margin: 25px 0;
 }
 .about__img-container {
   gap: 70px;
@@ -146,7 +189,10 @@ body {
   background: var(--pink);
   border-radius: 50%;
 }
-
+.button:hover {
+    transform: scale(1.05);
+    background: var(--orange1);
+}
 
 
 @media(max-width: 1100px) {
@@ -166,6 +212,9 @@ body {
   .about__text-container {
     width: 100%;
   }
+  .header__text-container {
+    align-items: center;
+  }
 }
 @media(max-width: 900px) {
   .header-nav__list, .button-nav {
@@ -173,6 +222,9 @@ body {
   }
   .header-about { 
     padding: 50px 40px;
+  }
+  .burger {
+    display: block;
   }
 }
 @media(max-width: 600px) {

@@ -20,6 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 700px;
+    margin-top: 20px;
 }
 .check-block {
     width: 250px;
@@ -38,6 +39,7 @@
 .analysis__content-container {
     display: flex;
     gap: 25px;
+    margin-top: 20px;
 }
 .analysis__content-block {
     background: var(--pink);
@@ -51,7 +53,172 @@
 .analysis__img-block {
     width: 555px;
     height: 490px;
+}
+.advantages {
+    background: #6425CB;
     
+}
+.main__inner2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.main__text-block {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 30px;
+}
+.main__card-container {
+    display: flex;
+    gap: 30px;
+}
+.main__cards-block {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.main__card {
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+    padding: 40px;
+    max-width: 400px;
+    min-height: 400px;
+}
+@media(max-width: 1400px) {
+    .main__inner2 {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    .main__cards-block {
+        top: 0 !important;
+    }
+    .main-card1, .main-card3 {
+        margin-right: 30px;
+    }
+    .main__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.links-container {
+    display: flex;
+    gap: 17px 34px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.link-block {
+    background: #FFF;
+    box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.05);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    position: relative;
+    width: 230px;
+    height: 110px;
+    text-align: center;
+}
+.link-block--active {
+    background: #F4AB00;
+}
+.services__small-text {
+    color: #2C1258;
+}
+.services__small-text--active {
+    color: #FFF;
+}
+.sqr {
+    width: 25px;
+    height: 25px;
+    background: #F4AB00;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: -10px;
+}
+.social__main {
+    display: flex;
+    padding: 75px 0;
+    justify-content: space-between;
+}
+.social__text-container {
+    max-width: 700px;
+}
+.checks-container {
+    margin: 20px 0 50px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.small-text {
+    margin: 0;
+}
+.check-block {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    gap: 15px;
+}
+.work {
+    background: #421B81;
+    color: white;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.work__inner {
+    position: relative;
+    
+}
+.work__steps {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    width: 100vw;
+    position: relative;
+    margin-top: 50px;
+}
+.step {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 10px 0;
+}
+.step__img-wrapper {
+    width: 90px;
+    left: 100px;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    background: #421B81;
+    
+    justify-content: center;
+}
+.step-text {
+    font-size: 20px;
+    line-height: 28px;
+}
+.line {
+    background: rgba(255, 255, 255, 0.30);
+    height: 2px;
+    width: 70%;
+    left: 11.2%;
+    top: 22px;
+    z-index: 0;
+    display: flex;
+    position: absolute;  
 }
 @media(max-width: 1100px) {
     .notebook-img {
@@ -77,6 +244,30 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .social__img {
+        display: none;
+    }
+    .social__main, .check-block {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 900px) {
+    .main__card-container {
+        flex-direction: column;
+    }
+    .line {
+        display: none;
+    }
+    .work__steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    .step {
+        margin-bottom: 50px;
     }
 }
 @media(max-width: 460px) {

@@ -1,0 +1,160 @@
+@import url(../css/header.css);
+@import url(../css/m-top.css);
+.team {
+    margin: 60px 0;
+}
+.team__inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team__people-contaner {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px 0;
+    max-width: 1100px;
+}
+.team__people {
+    max-width: 330px;
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.people-name {
+    color: #2C1258;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: start;
+}
+.people-job {
+    color: #604B83;
+    line-height: 24px;
+    text-align: start;
+}
+.price {
+    background: #6425CB;
+    padding: 70px 0 110px;
+    color: white;
+}
+
+.prices__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.price__block {
+    background: #FFF;
+    padding: 40px 40px 50px;
+    border-radius: 32px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--tr);
+}
+.price__block:hover {
+    transform: scale(1.05);
+}
+.price-number {
+    color: #5B25B3;
+    font-size: 50px;
+}
+.price-condition {
+    margin: 30px 0;
+}
+.price-condition span {
+    line-height: 16px;
+    color: #604B83;
+}
+.popular {
+    position: absolute;
+    left: -100px;
+    top: 20px;
+    transition: var(--tr);
+}
+.price__block:hover .popular{
+    left: 0;
+}
+.price-button:hover {
+    border: 1px solid black;
+    background: transparent;
+    color: #2C1258;
+    
+}
+.reviews {
+    margin: 150px 0;
+}
+.reviews__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.review {
+    max-width: 700px;
+}
+.company {
+    margin-top: 120px;
+    padding: 65px 55px;
+    border-top: 1px #E9E9E9 solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1160px;
+    gap: 15px 10px;
+}
+.gallery {
+    background: var(--pink);
+    padding: 90px 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.gallery__img-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.gallery__img-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gallery__img {
+    max-width: 376px;
+}
+.gallery__text-block {
+    justify-content: center;
+    align-items: center;
+    padding: 25px 10px 60px;
+    width: 100%;
+    background: #FFF;
+    max-width:376px; 
+    max-height: 300px;
+}
+
+.sqr2 {
+    width: 4px;
+    height: 4px;
+    flex-shrink: 0;
+    display: flex;
+    background: rgba(36, 108, 255, 0.40);
+}
+.touch {
+    color: #FFF;
+    text-align: center;
+    background: #421B81;
+    padding: 110px 0;
+}
+@media(max-width: 900px) {
+    .team__people-contaner {
+        justify-content: center;
+    }
+}

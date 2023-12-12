@@ -2,6 +2,9 @@
     font-family: 'Nunito';
     src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
   }
+  html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Nunito', sans-serif;
     justify-content: center;
@@ -247,6 +250,7 @@ body {
   }
   .h2-text {
     font-size: 10vw;
+    line-height: 35px;
   }
   .h4-text {
     line-height: 100%;

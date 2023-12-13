@@ -6,7 +6,7 @@
 .notebook {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 150px;
+    
 }
 .notebook-img {
     max-width: 552px;
@@ -32,6 +32,7 @@
 .analysis {
     display: flex;
     justify-content: space-around;
+    margin: 100px 0;
 }
 .analysis__text-container {
     max-width: 580px;
@@ -40,6 +41,8 @@
     display: flex;
     gap: 25px;
     margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .analysis__content-block {
     background: var(--pink);
@@ -89,6 +92,9 @@
     padding: 40px;
     max-width: 400px;
     min-height: 400px;
+}
+.main__card .h3-text{
+    margin: 25px 0 10px;
 }
 @media(max-width: 1400px) {
     .main__inner2 {
@@ -271,9 +277,6 @@
     }
 }
 @media(max-width: 460px) {
-    .analysis__content-container {
-        flex-direction: column;
-    }
     .header__text-orange {
         line-height: 35px;
     }

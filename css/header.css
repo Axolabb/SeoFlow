@@ -51,24 +51,28 @@ body {
   gap: 75px 0;
   position: relative;
 }
+
 .header-social {
   display: flex;
   justify-content: space-between;
   height: 28px;
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
-.social__left-container,.social__number-block, .social__e-mail-block, .social__right-block, .header__main-container {
+.social__left-container, .social__right-block, .header__main-container, .social-block{
   display: flex;
   gap: 15px;
   color: #FFF;
-}
-.social__number-block span, .social__e-mail-block span {
-  line-height: 28px;
+  align-items: center;
 }
 .social__right-block {
   display: flex;
   align-items: center;
-  
+}
+.social__text {
+  transition: var(--tr);
+}
+.social__text:hover {
+  color: var(--orange);
 }
 .header-nav {
   margin-top: -55px;
@@ -79,13 +83,16 @@ body {
   justify-content: space-between;
   padding: 25px 15px;
   align-items: center;
+  gap: 10px;
 }
 .header-nav__list {
   display: flex;
   gap: 30px;
 }
-.header-nav__item {
+.header-nav__item a{
     transition: var(--tr);
+    white-space: nowrap;
+    
 }
 .header-nav__item:hover {
     text-shadow: 1px 1px 8px #afafaf;
@@ -95,11 +102,15 @@ body {
 .button {
   border-radius: 32px;
   background: var(--orange);
-  padding: 11px 40px;
+  padding: 11px 0;
+  display: flex;
+  justify-content: center;
   color: #FFF;
   line-height: 19px;
   transition: var(--tr);
+  width: 100%;
   max-width: 230px;
+  min-width: 150px;
 }
 
 .header__text-container {
@@ -114,6 +125,7 @@ body {
 }
 .header__text-orange {
   color: var(--orange);
+  line-height: 40px;
 }
 .header__main-container {
   display: flex;
@@ -219,15 +231,17 @@ body {
     align-items: center;
   }
 }
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
+  .burger {
+    display: block;
+  }
   .header-nav__list, .button-nav {
     display: none;
   }
+}  
+@media(max-width: 900px) {
   .header-about { 
     padding: 50px 40px;
-  }
-  .burger {
-    display: block;
   }
 }
 @media(max-width: 600px) {
@@ -239,18 +253,24 @@ body {
   }
 }
 @media(max-width: 460px) {
-  .social__left-container {
+  .header-social {
     display: none;
   }
+  .header-nav {
+    margin-top: 20px;
+  }
+  .header__inner {
+    gap: 20px;
+  }
   .header-about { 
-    padding: 15px 5px;
+    padding: 60px 5px;
   }
   .about__img-block {
     flex-direction: column;
   }
   .h2-text {
     font-size: 10vw;
-    line-height: 35px;
+    line-height: 50px;
   }
   .h4-text {
     line-height: 100%;

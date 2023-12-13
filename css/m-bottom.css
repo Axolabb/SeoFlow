@@ -151,10 +151,114 @@
     color: #FFF;
     text-align: center;
     background: #421B81;
-    padding: 110px 0;
+    padding: 110px 0 120px;
+}
+.form {
+    position: relative;
+    margin-top: -150px;
+    margin-bottom: -110px;
+}
+.form__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+.contact-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100vw;
+}
+.contact-block {
+    padding: 40px 0;
+    border-radius: 16px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.07);
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    gap: 20px;
+    max-width: 376px;
+}
+.form__main {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 110px;
+}
+.form__img {
+    max-width: 496px;
+    width: 100%;
+}
+.form__input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 25px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.form__text .button {
+    max-width: 48%;
+}
+.label {
+    border-radius: 5px;
+    border: 1px solid rgba(44, 18, 88, 0.10);
+    background: #FFF;
+    width: 48%;
+    position: relative;
+    padding: 10px 20px;
+    min-width: 310px;
+}
+.label input {
+    width: 100%;
+    color: #47375f;
+}
+.label textarea {
+    width: 100%;
+    resize: none;
+    font-size: 18px;
+    color: #47375f;
+}
+.form__text .small-text {
+    margin: 10px 0 30px;
+}
+.label__placeholder {
+    position: absolute;
+    color: var(--viol2);
+}
+.label-message {
+    width: 100%;
+}
+@media(max-width: 1100px) {
+    .form__img {
+        display: none;
+    }
+
 }
 @media(max-width: 900px) {
     .team__people-contaner {
         justify-content: center;
+    }
+}
+@media(max-width: 800px) {
+    .touch {
+        padding: 110px 0 200px;
+    }
+}
+@media(max-width: 675px) {
+    .label{
+        width: 100%;
+        min-width: 0;
+    }
+    .form__text .button {
+        max-width: 100%;
     }
 }

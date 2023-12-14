@@ -1,3 +1,24 @@
+const head = document.querySelector('.header');
+const main = document.querySelector('.main');
+const burger = document.querySelector('.burger')
+const burger_container = document.querySelector('.burger__container')
+const burger_wrapper = document.querySelector('.burger__wrapper')
+const burger_item = document.querySelector('.burger__nav-item')
+const body = document.querySelector('body');
+
+burger.addEventListener('click', () => {
+    head.classList.add('blur');
+    main.classList.add('blur');
+    body.style.overflowY = 'hidden';
+    burger_wrapper.style.left = '0%'
+});
+burger_wrapper.addEventListener('click', () => {
+    head.classList.remove('blur');
+    main.classList.remove('blur');
+    body.style.overflowY = 'visible';
+    burger_wrapper.style.left = '100%'
+})
+
 
 
 

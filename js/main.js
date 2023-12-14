@@ -2,31 +2,28 @@
 
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-  loop: true,
-  pagination: {
-    el: '.gallery__pagination',
-    type: 'fraction',
-  },
-  navigation: {
-    nextEl: '.counter-right',
-    prevEl: '.counter-left',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1.5,
-      spaceBetween: 20
+    slidesPerView: 3,
+    spaceBetween: 20,
+    centeredSlides: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
     },
-    680: {
-      slidesPerView: 3,
-      spaceBetween: 16
-    },
-    1070: {
-      slidesPerView: 4,
-      spaceBetween: 32
-    }
-    }
+    navigation: {
+        nextEl: '.arrow-right',
+        prevEl: '.arrow-left',
+      },
+    breakpoints: {
+        250: {
+            slidesPerView: 1.2
+        },
+       850: {
+            slidesPerView: 1.5,
+        },
+        1100: {
+            slidesPerView: 3,
+        }
+        }
 });
 
 let inputs = document.querySelector('.form__number');

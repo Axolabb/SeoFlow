@@ -86,14 +86,23 @@
 .reviews {
     margin: 150px 0;
 }
+.reviews .container {
+    padding: 0;
+}
 .reviews__inner {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    overflow: hidden;
 }
 .review {
     max-width: 700px;
+    padding: 0 0px;
+    cursor: pointer;
+}
+.review .small-text {
+    padding: 0 10px;
 }
 .company {
     margin-top: 120px;
@@ -231,7 +240,6 @@
     font-size: 18px;
     color: #47375f;
 }
-
 .form__text .small-text {
     margin: 10px 0 30px;
 }
@@ -255,6 +263,53 @@
     user-select: none;
     pointer-events: none;
 }
+.reviews__swiper {
+    width: 100%;
+    display: flex;
+    padding: 100px 0 100px;
+}
+
+.swiper-slide {
+    opacity: 0;
+    transition: var(--tr);
+    opacity: 0.2;
+}
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.15) !important;
+}
+.swiper-scrollbar {
+    height: 5px !important;
+}
+.swiper-scrollbar-drag {
+    background: var(--viol2);
+}
+.reviews__swiper {
+    gap: 40px !important;
+}
+.arrow-block {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-top: 100px;
+    z-index: 10;
+}
+.arrow-left {
+    transform: rotate(180deg);
+}
+.arrow svg{
+    transition: var(--tr);
+    fill: var(--viol2);
+}
+.arrow:hover svg{
+    fill: var(--viol1);
+}
+.arrow-right:hover{
+    transition: var(--tr);
+}
+
+
 @media(max-width: 1100px) {
     .form__img {
         display: none;

@@ -89,13 +89,13 @@ body {
   display: flex;
   gap: 30px;
 }
-.header-nav__item a{
+.header-nav__item {
     transition: var(--tr);
     white-space: nowrap;
-    
+    display: flex;
 }
 .header-nav__item:hover {
-    text-shadow: 1px 1px 8px #afafaf;
+    text-shadow: 1px 1px 8px #cacaca;
     transform: scale(1.1);
     transition: var(--tr);
 }

@@ -41,7 +41,7 @@
 }
 .footer__follow-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 5px;
 }
 .footer__inner2 {
@@ -52,6 +52,12 @@
     text-align: center;
     padding: 40px 0;
     color: var(--viol1);
+}
+.hover {
+    transition: var(--tr);
+}
+.hover:hover {
+    color: var(--orange);
 }
 @media(max-width: 555px) {
     .footer__inner, .footer__touch div, .footer__inner2 {

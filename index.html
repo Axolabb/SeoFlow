@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/root.css">
@@ -13,7 +14,7 @@
     <title>SEOFlow</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header-social">
@@ -41,15 +42,15 @@
                 <nav class="header-nav">
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="94" height="17" viewBox="0 0 94 17" fill="none"><path d="M89.674 3.16949L91.5491 1.21048L93.4239 3.16949L94 2.56639L91.5491 0L89.0982 2.56639L89.674 3.16949Z" fill="black"/><path d="M6.38485 15.1732C9.3917 15.1732 11.3899 13.3286 11.3899 10.9705C11.3899 8.25105 9.73425 7.33823 6.5371 6.90084C4.17729 6.55854 3.72056 6.00705 3.72056 4.90406C3.72056 3.85813 4.51984 3.11647 6.06133 3.11647C7.62185 3.11647 8.44016 3.72501 8.68756 5.15128H11.0093C10.7429 2.54596 8.99205 1.21478 6.06133 1.21478C3.22576 1.21478 1.32269 2.88827 1.32269 5.11325C1.32269 7.66152 2.86418 8.6504 6.11842 9.08779C8.32598 9.44912 8.95399 9.92454 8.95399 11.1797C8.95399 12.4348 7.88827 13.2715 6.38485 13.2715C4.08214 13.2715 3.53025 12.1305 3.35897 10.7613H0.92305C1.11336 13.3286 2.67387 15.1732 6.38485 15.1732ZM14.6016 14.983H23.4319V12.9863H17.1327V9.01173H21.9284V7.11003H17.1327V3.38271H23.1083V1.38593H14.6016V14.983ZM32.5327 13.1384C30.0587 13.1384 28.2508 11.2177 28.2508 8.25105V8.09891C28.2508 5.1703 29.8303 3.21156 32.4946 3.21156C35.1589 3.21156 36.7194 5.2844 36.7194 8.0799V8.23203C36.7194 11.1797 35.1018 13.1384 32.5327 13.1384ZM32.4946 15.1732C36.6242 15.1732 39.3456 12.1876 39.3456 8.21301V8.06088C39.3456 4.06732 36.5481 1.19576 32.4946 1.19576C28.4601 1.19576 25.6055 4.14339 25.6055 8.11793V8.27006C25.6055 12.1876 28.3269 15.1732 32.4946 15.1732ZM42.5514 14.983H45.0825V9.41108H49.726V7.45234H45.0825V3.40173H50.982V1.38593H42.5514V14.983ZM53.8098 14.983H56.1125V0.435081H53.8098V14.983ZM64.1337 13.3856C62.3828 13.3856 61.3742 12.1115 61.3742 10.0767V9.92454C61.3742 7.87071 62.4209 6.63461 64.1337 6.63461C65.8464 6.63461 66.8741 7.88973 66.8741 9.94356V10.0767C66.8741 12.1115 65.8464 13.3856 64.1337 13.3856ZM64.1146 15.1732C67.0454 15.1732 69.2339 13.1574 69.2339 10.0577V9.90552C69.2339 6.86281 67.0454 4.828 64.1337 4.828C61.2029 4.828 59.0144 6.88183 59.0144 9.96257V10.1147C59.0144 13.1384 61.1839 15.1732 64.1146 15.1732ZM73.8523 14.983H76.2121L78.2293 8.28908L80.0753 14.983H82.4161L85.5371 5.03718H83.2915L81.2172 12.2256L79.276 5.03718H77.3539L75.2415 12.2256L73.2623 5.03718H70.8074L73.8523 14.983Z" fill="black"/></svg></span>
                     <ul class="header-nav__list">
-                        <li class="header-nav__item"><a href="#">Дом</a></li>
-                        <li class="header-nav__item"><a href="#">Почему SEO?</a></li>
-                        <li class="header-nav__item"><a href="#">Сервисы</a></li>
-                        <li class="header-nav__item"><a href="#">Команда</a></li>
-                        <li class="header-nav__item"><a href="#">Цены</a></li>
-                        <li class="header-nav__item"><a href="#">Блог</a></li>
-                        <li class="header-nav__item"><a href="#">Контакты</a></li>
+                        <li><a class="header-nav__item" href="#client">Дом</a></li>
+                        <li><a class="header-nav__item" href="#advantages">Почему SEO?</a></li>
+                        <li><a class="header-nav__item" href="#services">Сервисы</a></li>
+                        <li><a class="header-nav__item" href="#team">Команда</a></li>
+                        <li><a class="header-nav__item" href="#price">Цены</a></li>
+                        <li><a class="header-nav__item" href="#reviews">Отзывы</a></li>
+                        <li><a class="header-nav__item" href="#form">Контакты</a></li>
                     </ul>
-                    <a class="button button-nav" href="#">Консультация</a>
+                    <a class="button button-nav" href="#form">Консультация</a>
                     <a class="burger">
                         <span></span>
                     </a>
@@ -60,7 +61,7 @@
                         <p class="header__text header__text-orange" style="line-height: 70px;">SEO маркетинговое</p>
                         <p class="header__text">агенство.</p>
                         <p class="header__text-about">Spyro — это мощная тема WP для создания целевых страниц, которая позволяет создавать целевые страницы с высокой конверсией, используя специально созданные модули, объединенные внутри.</p>
-                        <a class="button" href="#">Посмотреть сейчас</a>
+                        <a class="button" href="#work">Посмотреть сейчас</a>
                     </div>
                     <div class="header__img-block">
                         <img src="img/png/image.png" style="width: 100%;">
@@ -73,115 +74,116 @@
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <div class="main__inner">
-                <div class="header-about">
-                    <div class="about__text-container">
-                        <p class="header__text-orange h4-text" style="margin-bottom: 20px; color: var(--orange)">Мы SEO и маркетинговое агентство</p>
-                        <p class="h2-text" style="margin-bottom: 25px;">Построение эффективной стратегии конверсии</p>
-                        <p class="small-text">Хорошая маркетинговая целевая страница играет важную роль в повышении коэффициента конверсии и достижении ваших маркетинговых целей или целей роста бизнеса. Это поможет вам более профессионально представить свою цифровую кампанию посетителям.</p>
-                    </div>
-                        <div class="about__img-block">
-                            <div class="img-radius">
-                                <img src="img/svg/plane.svg">
-                            </div>
-                            <div style="gap: 10px;">
-                                <h4 class="h4-text">Цифровой маркетинг</h4>
-                                <p class="small-text" style="line-height: 28px;">Это современная бизнес-тема, которая позволяет создавать потрясающие высокопроизводительные веб-сайты с использованием полностью визуального интерфейса.</p>                                
-                            </div>
+        <section class="client" id="client">
+            <div class="container">
+                <div class="main__inner">
+                    <div class="header-about">
+                        <div class="about__text-container">
+                            <p class="header__text-orange h4-text" style="margin-bottom: 20px; color: var(--orange)">Мы SEO и маркетинговое агентство</p>
+                            <p class="h2-text" style="margin-bottom: 25px;">Построение эффективной стратегии конверсии</p>
+                            <p class="small-text">Хорошая маркетинговая целевая страница играет важную роль в повышении коэффициента конверсии и достижении ваших маркетинговых целей или целей роста бизнеса. Это поможет вам более профессионально представить свою цифровую кампанию посетителям.</p>
                         </div>
-                        <div class="about__img-block">
-                            <div class="img-radius">
-                                <img src="img/svg/rocket.svg">
-                            </div>
-                            <div style="gap: 10px;">
-                                <h4 class="h4-text">Поисковая оптимизация</h4>
-                                <p class="small-text" style="line-height: 28px;">Она включает в себя анализ ключевых слов, оптимизацию контента, техническую оптимизацию сайта, а также стратегии построения ссылок</p>                                
-                            </div>
-                        </div>
-                </div>
-                <section class="notebook">
-                    <div class="notebook-img">
-                        <img src="img/png/notebook.png" alt="notebook" style="width: 100%;">
-                    </div>
-                    <div class="notebook__text-container">      
-                        <p style="font-size: 20px;" class="header__text-orange">Ищете лучшие результаты SEO?</p>
-                        <p class="h2-text" style="margin: 25px 0;">Появитесь на первой странице Google!</p>
-                        <p class="small-text" style="line-height: 34px;">SEO-маркетинг является ключевым элементом успешной онлайн стратегии для видимости и успешности вашего бренда. Он помогает установить связь с клиентами, увеличить доходы, привлечь больше трафика на сайт, улучшить конверсию, повысить репутацию бренда и обеспечить постоянный анализ в режиме реального времени для улучшения и удержания результатов. В результате, эффективная SEO стратегия способствует созданию ценности бренда и увеличению его видимости и влияния в виртуальном пространстве.</p>
-                        <div class="notebook__check-container">
-                            <div class="check-block">
-                                <img src="img/svg/check.svg">
-                                <span class="notebook__check-text">Связка с клиентами</span>
-                            </div>
-                            <div class="check-block">
-                                <img src="img/svg/check.svg">
-                                <span class="notebook__check-text">Доход</span>
-                            </div>
-                            <div class="check-block">
-                                <img src="img/svg/check.svg">
-                                <span class="notebook__check-text">Увеличение трафика</span>
-                            </div>
-                            <div class="check-block">
-                                <img src="img/svg/check.svg">
-                                <span class="notebook__check-text">Увеличение конверсии</span>
-                            </div>
-                            <div class="check-block">
-                                <img src="img/svg/check.svg">
-                                <span class="notebook__check-text">Репутация</span>
-                            </div>
-                            <div class="check-block" style="display: flex;">
-                                <img src="img/svg/check.svg">
-                                <span class="notebook__check-text">Аналитика в реальном времени</span>
-                            </div>
-                            <div class="check-block">
-                                <img src="img/svg/check.svg">
-                                <span class="notebook__check-text">Создание ценности бренда</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="analysis">
-                        <div class="analysis__text-container">
-                            <p class="header__text-orange" style="font-size: 20px;">Почему мы лучшие в промышленности?</p>
-                            <p class="h2-text">Главные причины выбора агентства SPYRO SEO</p>
-                            <p class="small-text">Мощная тема построения целевых страниц WordPress, Spyro, позволяет создавать высокооборотные целевые страницы с использованием специально разработанных модулей. Это значительно улучшает SEO маркетинг и позволяет эффективно продвигать бизнес в онлайн-пространстве.</p>
-                            <div class="analysis__content-container">
-                                <div class="analysis__content-block">
-                                    <div style="background: var(--viol2); padding: 20px 18px;">
-                                        <img src="img/svg/cloud.svg">
-                                    </div>
-                                    <div>
-                                        <div class="h3-text">98.5%</div>
-                                        <div class="small-text" style="line-height: 50px; margin: 0;">Удовлетворение</div>
-                                    </div>
+                            <div class="about__img-block">
+                                <div class="img-radius">
+                                    <img src="img/svg/plane.svg">
                                 </div>
-                                <div class="analysis__content-block">
-                                    <div style="background: var(--viol2); padding: 20px 18px;">
-                                        <img src="img/svg/conversion.svg">
-                                    </div>
-                                    <div>
-                                        <div class="h3-text">150%</div>
-                                        <div class="small-text" style="line-height: 50px; margin: 0;">Обращение</div>
-                                    </div>
+                                <div style="gap: 10px;">
+                                    <h4 class="h4-text">Цифровой маркетинг</h4>
+                                    <p class="small-text" style="line-height: 28px;">Это современная бизнес-тема, которая позволяет создавать потрясающие высокопроизводительные веб-сайты с использованием полностью визуального интерфейса.</p>                                
+                                </div>
+                            </div>
+                            <div class="about__img-block">
+                                <div class="img-radius">
+                                    <img src="img/svg/rocket.svg">
+                                </div>
+                                <div style="gap: 10px;">
+                                    <h4 class="h4-text">Поисковая оптимизация</h4>
+                                    <p class="small-text" style="line-height: 28px;">Она включает в себя анализ ключевых слов, оптимизацию контента, техническую оптимизацию сайта, а также стратегии построения ссылок</p>                                
+                                </div>
+                            </div>
+                    </div>
+                    <section class="notebook" id="notebook">
+                        <div class="notebook-img">
+                            <img src="img/png/notebook.png" alt="notebook" style="width: 100%;">
+                        </div>
+                        <div class="notebook__text-container">      
+                            <p style="font-size: 20px;" class="header__text-orange">Ищете лучшие результаты SEO?</p>
+                            <p class="h2-text" style="margin: 25px 0;">Появитесь на первой странице Google!</p>
+                            <p class="small-text" style="line-height: 34px;">SEO-маркетинг является ключевым элементом успешной онлайн стратегии для видимости и успешности вашего бренда. Он помогает установить связь с клиентами, увеличить доходы, привлечь больше трафика на сайт, улучшить конверсию, повысить репутацию бренда и обеспечить постоянный анализ в режиме реального времени для улучшения и удержания результатов. В результате, эффективная SEO стратегия способствует созданию ценности бренда и увеличению его видимости и влияния в виртуальном пространстве.</p>
+                            <div class="notebook__check-container">
+                                <div class="check-block">
+                                    <img src="img/svg/check.svg">
+                                    <span class="notebook__check-text">Связка с клиентами</span>
+                                </div>
+                                <div class="check-block">
+                                    <img src="img/svg/check.svg">
+                                    <span class="notebook__check-text">Доход</span>
+                                </div>
+                                <div class="check-block">
+                                    <img src="img/svg/check.svg">
+                                    <span class="notebook__check-text">Увеличение трафика</span>
+                                </div>
+                                <div class="check-block">
+                                    <img src="img/svg/check.svg">
+                                    <span class="notebook__check-text">Увеличение конверсии</span>
+                                </div>
+                                <div class="check-block">
+                                    <img src="img/svg/check.svg">
+                                    <span class="notebook__check-text">Репутация</span>
+                                </div>
+                                <div class="check-block" style="display: flex;">
+                                    <img src="img/svg/check.svg">
+                                    <span class="notebook__check-text">Аналитика в реальном времени</span>
+                                </div>
+                                <div class="check-block">
+                                    <img src="img/svg/check.svg">
+                                    <span class="notebook__check-text">Создание ценности бренда</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="analysis__img-block">
-                            <img src="img/png/state.png" style="width: 100%;">
-                        </div>
-                </section>
+                    </section>
+                    <section class="analysis">
+                            <div class="analysis__text-container">
+                                <p class="header__text-orange" style="font-size: 20px;">Почему мы лучшие в промышленности?</p>
+                                <p class="h2-text">Главные причины выбора агентства SPYRO SEO</p>
+                                <p class="small-text">Мощная тема построения целевых страниц WordPress, Spyro, позволяет создавать высокооборотные целевые страницы с использованием специально разработанных модулей. Это значительно улучшает SEO маркетинг и позволяет эффективно продвигать бизнес в онлайн-пространстве.</p>
+                                <div class="analysis__content-container">
+                                    <div class="analysis__content-block">
+                                        <div style="background: var(--viol2); padding: 20px 18px;">
+                                            <img src="img/svg/cloud.svg">
+                                        </div>
+                                        <div>
+                                            <div class="h3-text">98.5%</div>
+                                            <div class="small-text" style="line-height: 50px; margin: 0;">Удовлетворение</div>
+                                        </div>
+                                    </div>
+                                    <div class="analysis__content-block">
+                                        <div style="background: var(--viol2); padding: 20px 18px;">
+                                            <img src="img/svg/conversion.svg">
+                                        </div>
+                                        <div>
+                                            <div class="h3-text">150%</div>
+                                            <div class="small-text" style="line-height: 50px; margin: 0;">Обращение</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="analysis__img-block">
+                                <img src="img/png/state.png" style="width: 100%;">
+                            </div>
+                    </section>
             </div>
-        </div>
+        </section>
         <div class="gradient">
             <img src="img/bg/white-fiol.png" style="width: 100%;">
         </div>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <div class="container">
                 <div class="main__inner2">
                     <div class="main__text-block">
                         <p class="h2-text" style="color: #FFF;">Оптимизация коэффициента конверсии</p>
                         <p class="small-text" style="color: #FFF;">"Spyro" представляет собой мощную тему для создания целевых страниц WordPress, специально разработанную для повышения конверсии. Она обладает функциями оптимизации коэффициента конверсии (CRO), включая A/B тестирование, 10+ демонстраций для использования на сайте, и ресурсы для создания высокопроизводительных маркетинговых целевых страниц. "Spyro" также утверждается иметь высокий ROI (индекс окупаемости), что делает ее привлекательным решением для рекламодателей, маркетологов и компаний, желающих повысить эффективность своих целевых страниц.</p>
-                        <a href="#" class="button">Узнать стоимость</a>
+                        <a href="#price" class="button">Узнать стоимость</a>
                     </div>
                     <div class="main__card-container">
                         <div class="main__cards-block" style="top: -30px;">
@@ -215,37 +217,37 @@
         <div class="gradient">
             <img src="img/bg/fiol-white.png" style="width: 100%;">
         </div>  
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services__inner">
                     <p class="h2-text" style="text-align: center; margin: 50px 0 20px;">Наши сервисы</p>
                     <div class="links-container">
-                        <a class="link-block link-block--active">
+                        <a target="_blank" href="error.html" class="link-block link-block--active">
                             <img src="img/svg/plane-small.svg">
                             <p class="services__small-text services__small-text--active">SEO и маркетинг</p>
                             <div class="sqr"></div>
                         </a>
-                        <a class="link-block">
+                        <a target="_blank" href="error.html" class="link-block">
                             <img src="img/svg/@.svg">
                             <p class="services__small-text">Рекламный маркетинг</p>
                             <div class="sqr"></div>
                         </a>
-                        <a class="link-block">
+                        <a target="_blank" href="error.html" class="link-block">
                             <img src="img/svg/phone-icon.svg">
                             <p class="services__small-text">Мобильный маркетинг</p>
                             <div class="sqr"></div>
                         </a>
-                        <a class="link-block">
+                        <a target="_blank" href="error.html" class="link-block">
                             <img src="img/svg/pc.svg">
                             <p class="services__small-text">Гугл реклама</p>
                             <div class="sqr"></div>
                         </a>
-                        <a class="link-block">
+                        <a target="_blank" href="error.html" class="link-block">
                             <img src="img/svg/social.svg">
                             <p class="services__small-text">Реклама в соц.сетях</p>
                             <div class="sqr"></div>
                         </a>
-                        <a class="link-block">
+                        <a target="_blank" href="error.html" class="link-block">
                             <img src="img/svg/marketing.svg">
                             <p class="services__small-text">Цифровой маркетинг</p>
                             <div class="sqr"></div>
@@ -257,19 +259,19 @@
                             <p class="small-text" style="margin-top: 20px;">Тема Spyro для WordPress является чрезвычайно гибкой и удивительно простой в использовании. Этого, безусловно, достаточно для заслуженного 5-звездочного рейтинга в качестве отличного инструмента, дополнительно поддерживаемого превосходным обслуживанием клиентов.</p>
                             <div class="checks-container">
                                 <div class="check-block">
-                                    <img src="img/svg/check-radius2.svg">
+                                        <img src="img/svg/check-radius2.svg">
                                     <span class="small-text" style="line-height: 16px;">Увеличить органический трафик</span>
                                 </div>
                                 <div class="check-block">
-                                    <img src="img/svg/check-radius2.svg">
+                                        <img src="img/svg/check-radius2.svg">
                                     <span class="small-text" style="line-height: 16px;">Поисковая оптимизация на странице</span>
                                 </div>
                                 <div class="check-block">
-                                    <img src="img/svg/check-radius2.svg">
+                                        <img src="img/svg/check-radius2.svg">
                                     <span class="small-text" style="line-height: 16px;">Генерация обратных ссылок по принципам "белой шляпы".                                    </span>
                                 </div>
                             </div>
-                            <a href="#" class="button">Исследовать</a>
+                            <a href="#form" class="button">Исследовать</a>
                         </div>
                         <div class="social__img">
                             <img src="img/png/our-services-img.png" style="width: 100%;">
@@ -281,7 +283,7 @@
         <div class="gradient">
             <img src="img/bg/white-dark-fiol.png" style="width: 100%;">
         </div>
-        <section class="work">
+        <section class="work" id="work">
             <div class="container" style="padding: 0;">
                 <div class="work__inner">
                     <p class="h2-text" style="color: white; line-height: 50px;">Как работает <span style="color: var(--orange);">SEO</span> шаг за шагом?</p>
@@ -316,7 +318,7 @@
         <div class="gradient">
             <img src="img/bg/dark-fiol-white.png" style="width: 100%;">
         </div>
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="team__inner">
                     <p class="h2-text">Наша команда</p>
@@ -371,7 +373,7 @@
         <div class="gradient">
             <img src="img/bg/white-fiol.png" style="width: 100%;">
         </div>
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <div class="price__inner">
                     <p class="h2-text" style="color: white; text-align: center;">Цены и планы</p>
@@ -401,18 +403,18 @@
                                 <span class="small-text">Анализ конкурентов</span>
                             </p>
                             <p class="price-condition">
-                                <img src="img/svg/x.svg">
+                                <img src="img/svg/X.svg">
                                 <span class="small-text">Аналитика посещаемости</span>
                             </p>
                             <p class="price-condition">
-                                <img src="img/svg/x.svg">
+                                <img src="img/svg/X.svg">
                                 <span class="small-text">Регулярное обновление контента</span>
                             </p>
                             <p class="price-condition">
                                 <img src="img/svg/X.svg">
                                 <span class="small-text">Партнерство</span>
                             </p>
-                            <a href="#" class="button price-button">Выбрать</a>
+                            <a href="#form" class="button price-button">Выбрать</a>
                         </div>
                         <div class="price__block">
                             <p class="header__text-orange" style="font-size: 22px; text-align: center;">Золото</p>
@@ -443,14 +445,14 @@
                                 <span class="small-text">Аналитика посещаемости</span>
                             </p>
                             <p class="price-condition">
-                                <img src="img/svg/x.svg">
+                                <img src="img/svg/X.svg">
                                 <span class="small-text">Регулярное обновление контента</span>
                             </p>
                             <p class="price-condition">
                                 <img src="img/svg/X.svg">
                                 <span class="small-text">Партнерство</span>
                             </p>
-                            <a href="#" class="button price-button">Начать</a>
+                            <a href="#form" class="button price-button">Выбрать</a>
                         </div>
                         <div class="price__block">
                             <p class="header__text-orange" style="font-size: 22px; text-align: center;">Платина</p>
@@ -487,7 +489,7 @@
                                 <img src="img/svg/check.svg">
                                 <span class="small-text">Партнерство</span>
                             </p>
-                            <a href="#" class="button price-button">Начать</a>
+                            <a href="#form" class="button price-button">Выбрать</a>
                         </div>
                     </div>
                 </div>
@@ -496,7 +498,7 @@
         <div class="gradient">
             <img src="img/bg/fiol-white.png" style="width: 100%;">
         </div>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <div class="reviews__inner">
                     <p class="h2-text" style=" text-align: center;">Что говорят наши клиенты?</p>
@@ -577,7 +579,7 @@
         <div class="gradient">
             <img src="img/bg/dark-fiol-white.png" style="width: 100%;">
         </div>
-        <section class="form">
+        <section class="form" id="form">
             <div class="container">
                 <div class="form__inner">
                     <div>
@@ -594,14 +596,16 @@
                                 <img src="img/png/phone-icon2.png">
                             </div>
                             <p class="h4-text">Телефон</p>
-                            <p class="small-text">Консультация: 1800-123-4567 <br> Заказ: 2400-480-894</p>
+                            <a href="tel:1800-123-4567" class="small-text hover" style="margin-bottom: -20px;">Консультация: 1800-123-4567 </a>
+                            <a href="tel:2400-480-894" class="small-text hover">Заказ: 2400-480-894</a>
                         </div>
                         <div class="contact-block">
                             <div>
                                 <img src="img/png/phone-icon2.png">
                             </div>
                             <p class="h4-text">Почта</p>
-                            <p class="small-text">help@brandexponent.com <br> support@brandexponent.com</p>
+                            <a href="mailto:help@brandexponent.com" class="small-text hover" style="margin-bottom: -20px;">help@brandexponent.com</a>
+                            <a href="mailto:support@brandexponent.com" class="small-text hover">support@brandexponent.com</a>
                         </div>
                         </div>
                     </div>
@@ -627,7 +631,7 @@
                                 </label>
                                 <label class="label">
                                     <p class="label__placeholder">Телефон</p>
-                                    <input type="text">
+                                    <input type="text" class="form__number">
                                 </label>
                                 <label class="label">
                                     <p class="label__placeholder">Поиск сервиса</p>
@@ -660,16 +664,16 @@
                     <li class="h4-text" style="text-align: center;">Быстрые ссылки</li>
                     <div class="footer__links-block">
                         <div>
-                            <li class="small-text"><a href="#">SEO Агенство</a></li>
-                            <li class="small-text"><a href="#">Почему мы?</a></li>
-                            <li class="small-text"><a href="#">Оптимизация</a></li>
-                            <li class="small-text"><a href="#">Наши сервисы</a></li>
+                            <li class="small-text hover"><a href="#headr">SEO Агенство</a></li>
+                            <li class="small-text hover"><a href="#notebook">Почему мы?</a></li>
+                            <li class="small-text hover"><a href="#advantages">Оптимизация</a></li>
+                            <li class="small-text hover"><a href="#services">Наши сервисы</a></li>
                         </div>
                         <div>
-                            <li class="small-text"><a href="#">Как работает SEO?</a></li>
-                            <li class="small-text"><a href="#">Наша команда</a></li>
-                            <li class="small-text"><a href="#">Цены</a></li>
-                            <li class="small-text"><a href="#">Отзывы</a></li>
+                            <li class="small-text hover"><a href="#work">Как работает SEO?</a></li>
+                            <li class="small-text hover"><a href="#team">Наша команда</a></li>
+                            <li class="small-text hover"><a href="#price">Цены</a></li>
+                            <li class="small-text hover"><a href="#reviews">Отзывы</a></li>
                         </div>   
                     </div>      
                 </ul>
@@ -679,7 +683,7 @@
                         <div>
                             <img src="img/svg/nav-phone.svg">
                         </div>
-                        <a href="tel:1800-123-4567" class="small-text">1800-123-4567</a>
+                        <a href="tel:1800-123-4567" class="small-text hover">1800-123-4567</a>
                     </div>
                     <div>
                         <div>
@@ -691,13 +695,13 @@
                         <div>
                             <img src="img/svg/nav-email.svg">
                         </div>
-                        <a href="mailto:Info@brandexponents.com" class="small-text">Info@brandexponents.com</a>
+                        <a href="mailto:Info@brandexponents.com" class="small-text hover">Info@brandexponents.com</a>
                     </div>
                 </ul>
                 <ul class="footer__nav footer__follow">
                     <p class="h4-text">Подпишись на нас</p>
                     <div class="footer__follow-block">
-                    <a href="https://www.facebook.com" target="_blank">
+                    <a href="https://www.facebook.com" target="_blank" style=" position: relative; bottom: 5px;">
                         <img src="img/svg/facebook.svg">
                     </a>
                     <a href="https://twitter.com" target="_blank">
@@ -706,7 +710,7 @@
                     <a href="https://ru.linkedin.com" target="_blank">
                         <img src="img/svg/in.svg">
                     </a>
-                    <a href="https://ru.pinterest.com/" target="_blank">
+                    <a href="https://ru.pinterest.com/" target="_blank" style="position: relative; bottom: 2px;">
                         <img src="img/svg/p.svg">
                     </a>
                     </div>
@@ -718,5 +722,9 @@
             </div> 
         </div>
     </footer>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

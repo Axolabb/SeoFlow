@@ -79,10 +79,9 @@
     left: 0;
 }
 .price-button:hover {
-    border: 1px solid black;
-    background: transparent;
-    color: #2C1258;
-    
+    outline: 1px solid var(--viol2);
+    background: transparent !important;
+    color: var(--viol2);
 }
 .reviews {
     margin: 150px 0;
@@ -102,10 +101,10 @@
     border-top: 1px #E9E9E9 solid;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     max-width: 1160px;
-    gap: 15px 10px;
+    gap: 15px 75px;
 }
 .gallery {
     background: var(--pink);
@@ -186,6 +185,9 @@
     gap: 20px;
     max-width: 376px;
 }
+.contact-block .small-text {
+    margin: 0;
+}
 .form__main {
     display: flex;
     justify-content: center;
@@ -219,7 +221,9 @@
 }
 .label input {
     width: 100%;
-    color: #47375f;
+    color: var(--viol1);
+    margin-top: 15px;
+    transition: var(--tr);
 }
 .label textarea {
     width: 100%;
@@ -227,15 +231,29 @@
     font-size: 18px;
     color: #47375f;
 }
+
 .form__text .small-text {
     margin: 10px 0 30px;
 }
 .label__placeholder {
     position: absolute;
     color: var(--viol2);
+    user-select: none;
+    pointer-events: none;
 }
 .label-message {
     width: 100%;
+}
+.label input:focus{
+    margin-top: 20px;
+}
+.label-message textarea {
+    margin-top: 15px;
+}
+.form__number::placeholder {
+    color: var(--viol2) !important;
+    user-select: none;
+    pointer-events: none;
 }
 @media(max-width: 1100px) {
     .form__img {

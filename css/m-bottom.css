@@ -212,9 +212,10 @@
 .form__input {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px 25px;
+    gap: 25px;
     justify-content: space-between;
     margin-bottom: 30px;
+    position: relative;
 }
 .form__text .button {
     max-width: 48%;
@@ -251,10 +252,9 @@
 }
 .label-message {
     width: 100%;
+    height: 100% !important;
 }
-.label input:focus{
-    margin-top: 20px;
-}
+
 .label-message textarea {
     margin-top: 15px;
 }
@@ -291,8 +291,8 @@
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 35%;
-    margin-top: 100px;
+    width: 50%;
+    margin-top: 115px;
     z-index: 10;
 }
 .arrow-left {

@@ -105,7 +105,6 @@ body {
   color: #FFF;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .header__main-container {
   flex-wrap: nowrap;
@@ -167,11 +166,10 @@ body {
 }
 .header__text, .header__text-orange {
   font-size: 60px;
-  line-height: 70px;
+  line-height: 120% !important;
 }
 .header__text-orange {
   color: var(--orange);
-  line-height: 40px;
 }
 .header__main-container {
   display: flex;
@@ -257,8 +255,8 @@ body {
 .social__right-item path {
   fill: white !important;
 }
-.burger__container .social__right-block {
-  gap: 50px;
+.burger__container .social__right-block, .burger__container {
+  gap: 25px;
 }
 @media(max-width: 1100px) {
   .header__img-block {
